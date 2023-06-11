@@ -19,7 +19,7 @@
       loading = true;
       try {
         console.log(form)
-        const response = await fetch("http://94.198.220.231/api/v1/post", {
+        const response = await fetch("https://dall-e-svelte.onrender.com/api/v1/post", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -44,7 +44,7 @@
     if (form.prompt) {
       try {
         generatingImage = true;
-        const response = await fetch("http://94.198.220.231/api/v1/dalle", {
+        const response = await fetch("https://dall-e-svelte.onrender.com/api/v1/dalle", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
